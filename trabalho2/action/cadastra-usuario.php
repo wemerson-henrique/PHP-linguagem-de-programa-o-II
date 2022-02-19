@@ -7,15 +7,17 @@
     $veruser->dadosRecebidos = $dadosRecebidos;
     $veru = $veruser->username();
     if($veru){
-        echo '<script language="javascript">alert("Nome de usuario existente";)</script>';
+        echo '<script language="javascript">alert("Nome de usuario existente");</script>';
         echo "nome ja existe";
     }elseif (!empty($dadosRecebidos['SendCaduser'])) {
         $cadUser = new Usuario();
         $cadUser->dadosRecebidos = $dadosRecebidos;
         $valor = $cadUser->cadastrar();
         if ($valor) {
-            echo '<script language="javascript">alert("Usuariocadastrado com sucesso!";)</script>';
+            echo '<script language="javascript">alert("Usuariocadastrado com sucesso!");</script>';
             echo "cadastro bem sucedido!";
+        }else {
+            echo '<script language="javascript">alert("ERRO: Usuário não cadastrado!");</script>';
         }
     }
 ?>
