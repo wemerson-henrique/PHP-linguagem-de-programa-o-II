@@ -1,0 +1,7 @@
+.card{
+    background-color: rgb(223, 223, 255);
+    min-height: 700px;
+}
+hr{
+    border: 2px solid black;
+}
