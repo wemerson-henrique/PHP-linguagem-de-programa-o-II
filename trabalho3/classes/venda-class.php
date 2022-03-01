@@ -24,5 +24,14 @@
                 return false;
             }
         }
+
+        public function Listar(){
+            $this -> conexaoComBanco = $this->conetar();
+            $query_venda = "SELECT * FROM venda";
+            $cad_venda = $this->conexaoComBanco->prepare($query_venda);
+            $cad_venda->execute();
+            $retorno = $cad_venda->fetchALL();
+            return $retorno;
+        }
     }
 ?>
