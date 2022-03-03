@@ -9,6 +9,7 @@
         $valor = $produto->cadastrar();
         if ($valor) {
             echo '<script language="javascript">alert("Usuario cadastrado com sucesso!");</script>';
+            header('Location:..\paginas\relatorio.php');
             
         }else {
             echo '<script language="javascript">alert("ERRO: Usuário não cadastrado!");</script>';

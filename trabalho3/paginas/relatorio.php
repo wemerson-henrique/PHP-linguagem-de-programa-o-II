@@ -1,6 +1,9 @@
 <?php 
-    include('conf-bootstrap-web.php')
+    include('conf-bootstrap-web.php');
+    include_once('..\action\verificar-sessao.php');
+    include_once('..\paginas\menu.php');
 ?>
+<link rel="stylesheet" href="../css/style.css">
 <div>
     <div class="card">
         <div class="card-header">
@@ -21,8 +24,6 @@
                 <?php include('..\action\relatorio.php'); ?>
             </Table>
         </div>
-        <div class="card-footer">
-            Script by Wemerson henrique @ Direitos reservados
-        </div>
     </div>
 </div>
+<?php include_once('..\paginas\footer.php'); ?>

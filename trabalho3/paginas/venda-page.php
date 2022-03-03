@@ -1,8 +1,9 @@
 <?php 
     include('conf-bootstrap-web.php');
-    require '../classes/conf-banco-de-dados.php';
-    require '../classes/produto-class.php';
-
+    require ('../classes/conf-banco-de-dados.php');
+    require ('../classes/produto-class.php');
+    include_once('..\paginas\menu.php');
+    include_once('..\action\verificar-sessao.php');
     
 ?>
 <link rel="stylesheet" href="../css/style.css">
@@ -51,3 +52,4 @@
         </div>
     </div>
 </body>
+<?php include_once('..\paginas\footer.php'); ?>

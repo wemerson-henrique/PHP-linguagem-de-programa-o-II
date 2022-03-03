@@ -1,5 +1,6 @@
 <?php 
-    include('conf-bootstrap-web.php')
+    include('conf-bootstrap-web.php');
+    include_once('..\paginas\menu.php');
 ?>
 <link rel="stylesheet" href="../css/style.css">
 <body>
@@ -49,3 +50,4 @@
         </div>
     </div>
 </body>
+<?php include_once('..\paginas\footer.php'); ?>
