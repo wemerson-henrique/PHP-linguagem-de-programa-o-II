@@ -7,7 +7,7 @@
 
         public function logar(){
             $this -> conexaoComBanco = $this->conetar();
-            $query_logar = "SELECT id, usuario FROM usuario WHERE usuario = :userName and senha = :userSenha";
+            $query_logar = "SELECT id FROM usuario WHERE usuario = :userName and senha = :userSenha";
 
             $user_logando = $this->conexaoComBanco->prepare($query_logar);
 
