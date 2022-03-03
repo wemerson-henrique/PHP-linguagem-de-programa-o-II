@@ -15,7 +15,7 @@
         $valor = $cadUser->cadastrar();
         if ($valor) {
             echo '<script language="javascript">alert("Usuario cadastrado com sucesso!");</script>';
-            header('Location:..\paginas\relatorio.php');
+            header('Location:..\paginas\login-page.php');
         }else {
             echo '<script language="javascript">alert("ERRO: Usuário não cadastrado!");</script>';
         }

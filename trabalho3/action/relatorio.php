@@ -12,11 +12,11 @@
             <tr>
                 <td scope='row'>$ID</td>
                 <td>$Data_da_Venda</td>
-                <td>$Total_da_Venda</td>
+                <td>R$ $Total_da_Venda,00</td>
                 <td>$Quantidade_Vendida</td>
                 <td>$ID_Produto</td>
                 <td>$Nome_do_Produto</td>
-                <td>$Preco_de_Venda</td>
+                <td>R$ $Preco_de_Venda,00</td>
                 <td>$Quantidade_em_Estoque</td>
             </tr>
         ";

@@ -13,13 +13,13 @@
             <Table class="table">
                 <tr>
                     <th scope="col">ID</th>
-                    <th scope="col">Data_da_Venda</th>
-                    <th scope="col">Total_da_Venda</th>
-                    <th scope="col">Quantidade_Vendida</th>
-                    <th scope="col">ID_Produto</th>
-                    <th scope="col">Nome_do_Produto</th>
-                    <th scope="col">Preco_de_Venda</th>
-                    <th scope="col">Quantidade_em_Estoque</th>
+                    <th scope="col">Data da Venda</th>
+                    <th scope="col">Total da Venda</th>
+                    <th scope="col">Quantidade Vendida</th>
+                    <th scope="col">ID Produto</th>
+                    <th scope="col">Nome do Produto</th>
+                    <th scope="col">Preco de Venda</th>
+                    <th scope="col">Quantidade em Estoque</th>
                 </tr>
                 <?php include('..\action\relatorio.php'); ?>
             </Table>
