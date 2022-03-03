@@ -16,6 +16,7 @@
                 $confirmaVenda = $venda->RealizarVenda();
                 if ($confirmaVenda) {
                     echo '<script language="javascript">alert("Compra feita com sucesso!");</script>';
+                    header('Location:..\paginas\relatorio.php');
                 } else {
                     echo '<script language="javascript">alert("ERRO: Houve um erro ao realizar a compra.");</script>';
                 }

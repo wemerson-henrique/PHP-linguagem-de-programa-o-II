@@ -1,7 +1,7 @@
 <?php
     require_once('..\classes\conf-banco-de-dados.php');
     require_once('..\classes\venda-class.php');
-    include('..\paginas\conf-bootstrap-web.php');
+    require_once('..\paginas\conf-bootstrap-web.php');
 
     $venda = new Venda;
     $vendas = $venda->Listar();
